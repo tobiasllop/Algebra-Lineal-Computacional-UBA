@@ -63,8 +63,8 @@ def grid_plot(ax, ab, limits, a_label, b_label):
 def main():
     print('Ejecutar el programa')
     # generar el tipo de transformacion dando valores a la matriz T
-    #T = np.array([[2, 0.4],[0,1.]])
-    T = np.array([[(-1/4)*np.pi, 1],[1,(1/4)*np.pi]])
+    T = np.array([[2, 0.4],[0,1.]])
+    #T = np.array([[(-1/4)*np.pi, 1],[1,(1/4)*np.pi]]) R de 45°
     corners = np.array([[0,0],[100,100]])
     wz = pointsGrid(corners)
     vistform(T, wz, 'Deformar coordenadas')
